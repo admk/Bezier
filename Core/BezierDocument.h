@@ -5,7 +5,7 @@
 
 
 @interface BezierDocument : NSDocument <AJKFileSystemObserverDelegate> {
-	IBOutlet BezierView *bezierView;
+	BezierView *bezierView;
 	IBOutlet NSSplitView *splitView;
 	IBOutlet WebView *consoleView;
 	
@@ -15,7 +15,7 @@
 	AJKFileSystemObserver *fileSystemObserver;
 }
 
-
+@property (assign) IBOutlet BezierView *bezierView;
 @property (assign) NSURL *fileURL;
 @property (assign) AJKPlugin *plugin;
 

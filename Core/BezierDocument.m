@@ -6,6 +6,7 @@
 
 
 @implementation BezierDocument
+@synthesize bezierView;
 @synthesize fileURL, plugin;
 
 

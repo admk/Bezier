@@ -8,8 +8,11 @@
 
 - (void)drawRect:(NSRect)frameRect
 {
+	// commenting them out for transparent png export
+	/*
 	[[NSColor whiteColor] setFill];
 	NSRectFill(frameRect);
+	//*/
 	
 	[[NSColor lightGrayColor] setFill];
 	
